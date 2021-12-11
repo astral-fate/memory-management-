@@ -18,7 +18,7 @@ preform the translation from virtual to physical address
 18the access is illegal, because the memory adress that is requested has not been allocated at all. since the memory adress translation happens on pretty much every memory reference. most memory management units would integrate a small cache of valid virtual to physical adress translation. 
 
 
-21thr presence of a TLB will make the entire translation process much faster. it will also imply what kinds of pages can be there. 
+the presence of a TLB will make the entire translation process much faster. it will also imply what kinds of pages can be there. 
  
  
  
@@ -32,17 +32,57 @@ mathematical examples on page size, page table and number of entries, and page t
 
 
 
- A process with 12 bit addresses has an address bthe address space will only the 1st 2KB and the last 1KB are allocated and used how many entries are there in a single level format
+
+![FGW0o6wXIAUCAfn jpeg](https://user-images.githubusercontent.com/63984422/145692077-816beb22-dcde-4e9d-b79e-410ea95a86b4.jpg)
+
+
+ A process with 12 bit addresses has an address space where only the 1st 2KB and the last 1KB are allocated and used how many entries are there in a single level format
+ 
+ 
+ we have 12 bits, and that can be written as 2^12. 
+ then we have 6 offset bits, that is 2^6
+ 
+and we know that:
+
+virtual adress space bits = number of pages x size of pages 
+
+hence, to find the number of pages, which equals the number of entries on the page table:
+
+
+number of pages = bits/size
+
+hence 
+
+2^12/2^6=2^6
+= 64
  
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ![FGW0o6wXIAUCAfn jpeg-١](https://user-images.githubusercontent.com/63984422/145692087-e09d6a8b-3dab-49e1-9b7c-864e78cfdbf1.jpg)
+
  
  
   How many entries are needed in the inner page tables of the 2 level page table when the 2nd format is used
   
   
+  the size of this adress is the same; 2^6
   
+  and now since we have two pages, an inner page that is not used, and an outer page which has the value of 4 bits,  then we represent this number by the power of 2, hence it becomes 
+  
+  2^4 = 16
+   
+   
+   and since we have three segments then:
+   
+   16×3= 48 bits
   
   
  
