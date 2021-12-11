@@ -85,4 +85,37 @@ hence
    16×3= 48 bits
   
   
+  
+  
+  
+  
+  
+  another mathematical example
+  
+  
+  Consider a memory architecture using two-level paging for address translation. 
+The format of the virtual address, physical address, and PTE (page table entry) 
+are below: 
+
+![Screenshot_٢٠٢١١٢١٢-٠٠٣٧٢٧_OneDrive](https://user-images.githubusercontent.com/63984422/145692466-60184f51-73e3-4774-8cc9-1e32ab9dbac6.jpg)
+
+
+
+
+
+(a) What is the size of a page?
+
+
+
+(b) What is the size of the maximum physical memory?
+
+
+
+
+
+
+
+(c) What is the total memory needed for storing all page tables of a process that 
+uses the entire physical memory
+  
  
