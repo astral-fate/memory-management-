@@ -107,7 +107,34 @@ are below:
 
 
 
+bits = number of pages × size 
+
+given: 
+
+
+number of pages = 2×9 bits 
+
+offset, aka adress size = 14 bits 
+
+hence, size is:
+
+= 2^14
+
+
+
 (b) What is the size of the maximum physical memory?
+
+physical adress bits = number of frames × frame size 
+
+
+given: 
+
+numner of frames = one, that has the size of 10 bits 
+offset= 14 bits 
+
+then the maximum size is 10+14 =24
+hence, 2^24
+
 
 
 
@@ -117,5 +144,14 @@ are below:
 
 (c) What is the total memory needed for storing all page tables of a process that 
 uses the entire physical memory
+
+size of page table entry = size of virtual adress 
+
+hence, at the 1st level, there is: 
+
+2^10 + 
+
+2^9 × 2 
+
   
  
